@@ -8,13 +8,14 @@
 //
 
 #import "BaseButton.h"
+#import "OperationsManager.h"
 
 @implementation BaseButton
 
 -(void)awakeFromNib {
     [super awakeFromNib];
     
-    [[self layer] setBorderWidth:0.5f];
+    [[self layer] setBorderWidth:0.2f];
     [[self layer] setBorderColor:[UIColor blackColor].CGColor];
 }
 
