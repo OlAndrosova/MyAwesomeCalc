@@ -7,29 +7,30 @@
 //
 
 #import "ViewController.h"
+#import "BaseButton.h"
 
 @interface ViewController ()
 
-@property (weak, nonatomic) IBOutlet UIButton *zeroButtonOutlet;
-@property (weak, nonatomic) IBOutlet UIButton *oneButtonOutlet;
-@property (weak, nonatomic) IBOutlet UIButton *twoButtonOutlet;
-@property (weak, nonatomic) IBOutlet UIButton *threeButtonOutlet;
-@property (weak, nonatomic) IBOutlet UIButton *plusButtonOutlet;
-@property (weak, nonatomic) IBOutlet UIButton *fourButtonOutlet;
-@property (weak, nonatomic) IBOutlet UIButton *fiveButtonOutlet;
-@property (weak, nonatomic) IBOutlet UIButton *sixButtonOutlet;
-@property (weak, nonatomic) IBOutlet UIButton *sevenButtonOutlet;
-@property (weak, nonatomic) IBOutlet UIButton *eightButtonOutlet;
-@property (weak, nonatomic) IBOutlet UIButton *nineButtonOutlet;
+@property (weak, nonatomic) IBOutlet BaseButton *zeroButtonOutlet;
+@property (weak, nonatomic) IBOutlet BaseButton *oneButtonOutlet;
+@property (weak, nonatomic) IBOutlet BaseButton *twoButtonOutlet;
+@property (weak, nonatomic) IBOutlet BaseButton *threeButtonOutlet;
+@property (weak, nonatomic) IBOutlet BaseButton *plusButtonOutlet;
+@property (weak, nonatomic) IBOutlet BaseButton *fourButtonOutlet;
+@property (weak, nonatomic) IBOutlet BaseButton *fiveButtonOutlet;
+@property (weak, nonatomic) IBOutlet BaseButton *sixButtonOutlet;
+@property (weak, nonatomic) IBOutlet BaseButton *sevenButtonOutlet;
+@property (weak, nonatomic) IBOutlet BaseButton *eightButtonOutlet;
+@property (weak, nonatomic) IBOutlet BaseButton *nineButtonOutlet;
 
-@property (weak, nonatomic) IBOutlet UIButton *dotButtonOutlet;
-@property (weak, nonatomic) IBOutlet UIButton *equalButtonOutlet;
-@property (weak, nonatomic) IBOutlet UIButton *minusButtonOutlet;
-@property (weak, nonatomic) IBOutlet UIButton *multiplyButtonOutlet;
-@property (weak, nonatomic) IBOutlet UIButton *clearButtonOutlet;
-@property (weak, nonatomic) IBOutlet UIButton *changePlusMinus;
-@property (weak, nonatomic) IBOutlet UIButton *percentButtonOutlet;
-@property (weak, nonatomic) IBOutlet UIButton *divisionButtonOutlet;
+@property (weak, nonatomic) IBOutlet BaseButton *dotButtonOutlet;
+@property (weak, nonatomic) IBOutlet BaseButton *equalButtonOutlet;
+@property (weak, nonatomic) IBOutlet BaseButton *minusButtonOutlet;
+@property (weak, nonatomic) IBOutlet BaseButton *multiplyButtonOutlet;
+@property (weak, nonatomic) IBOutlet BaseButton *clearButtonOutlet;
+@property (weak, nonatomic) IBOutlet BaseButton *changePlusMinus;
+@property (weak, nonatomic) IBOutlet BaseButton *percentButtonOutlet;
+@property (weak, nonatomic) IBOutlet BaseButton *divisionButtonOutlet;
 
 @property (weak, nonatomic) IBOutlet UILabel *labelTextOutlet;
 
@@ -41,14 +42,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [[_zeroButtonOutlet layer] setBorderWidth:0.5f];
-    [[_zeroButtonOutlet layer] setBorderColor:[UIColor blackColor].CGColor];
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 

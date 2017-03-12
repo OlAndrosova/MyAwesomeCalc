@@ -13,7 +13,7 @@
 		62F357D51E75B7D7009E5486 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62F357D31E75B7D7009E5486 /* LaunchScreen.storyboard */; };
 		62F357D61E75B7D7009E5486 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62F357D41E75B7D7009E5486 /* Main.storyboard */; };
 		62F357DA1E75B80F009E5486 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62F357D81E75B80F009E5486 /* Assets.xcassets */; };
-		62F357DB1E75B80F009E5486 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62F357D91E75B80F009E5486 /* Info.plist */; };
+		62F357E01E75B9CA009E5486 /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F357DF1E75B9CA009E5486 /* BaseButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +27,8 @@
 		62F357D41E75B7D7009E5486 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		62F357D81E75B80F009E5486 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62F357D91E75B80F009E5486 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62F357DE1E75B9CA009E5486 /* BaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseButton.h; sourceTree = "<group>"; };
+		62F357DF1E75B9CA009E5486 /* BaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		62F357B21E756D0A009E5486 /* Calc */ = {
 			isa = PBXGroup;
 			children = (
+				62F357DC1E75B9A8009E5486 /* Components */,
 				62F357D71E75B7E9009E5486 /* Resources */,
 				62F357D21E75B7C0009E5486 /* Storyboards */,
 				62F357CE1E75B7A2009E5486 /* ViewControllers */,
@@ -110,6 +113,23 @@
 				62F357D91E75B80F009E5486 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		62F357DC1E75B9A8009E5486 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				62F357DD1E75B9B9009E5486 /* Base Button */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		62F357DD1E75B9B9009E5486 /* Base Button */ = {
+			isa = PBXGroup;
+			children = (
+				62F357DE1E75B9CA009E5486 /* BaseButton.h */,
+				62F357DF1E75B9CA009E5486 /* BaseButton.m */,
+			);
+			path = "Base Button";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,7 +191,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62F357DB1E75B80F009E5486 /* Info.plist in Resources */,
 				62F357D61E75B7D7009E5486 /* Main.storyboard in Resources */,
 				62F357DA1E75B80F009E5486 /* Assets.xcassets in Resources */,
 				62F357D51E75B7D7009E5486 /* LaunchScreen.storyboard in Resources */,
@@ -187,6 +206,7 @@
 			files = (
 				62F357CD1E75B791009E5486 /* AppDelegate.m in Sources */,
 				62F357D11E75B7AF009E5486 /* ViewController.m in Sources */,
+				62F357E01E75B9CA009E5486 /* BaseButton.m in Sources */,
 				62F357B51E756D0A009E5486 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
